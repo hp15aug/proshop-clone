@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import HomeScreen from "./Screens/HomeScreen";
+
 import { Container } from "react-bootstrap";
 
 export default function App() {
@@ -9,7 +11,7 @@ export default function App() {
       <Header />
       <main className="py-3">
         <Container>
-          <h1>Welcome To ProShop</h1>
+          <HomeScreen />
         </Container>
         <Footer></Footer>
       </main>
