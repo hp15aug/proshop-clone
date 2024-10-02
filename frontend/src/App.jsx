@@ -1,7 +1,18 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import { Container } from "react-bootstrap";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <h1>Welcome To ProShop</h1>
+        </Container>
+        <Footer></Footer>
+      </main>
+    </div>
   )
 }
