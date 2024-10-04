@@ -4,7 +4,10 @@ import cors from "cors";
 
 dotenv.config();
 
+import connectDB from "./config/db.js"
 import products from "./data/products.js";
+
+connectDB();
 
 const port=process.env.PORT;
 
