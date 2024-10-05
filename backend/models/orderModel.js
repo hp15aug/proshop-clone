@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const objectSchema = new mongoose.Schema({
+const orderSchema = new mongoose.Schema({
     user:{
         type: String,
         required: true,
@@ -77,6 +77,6 @@ const objectSchema = new mongoose.Schema({
     }
   );
 
-const Object = mongoose.model("Object", objectSchema);
+const Order = mongoose.model("Order", orderSchema);
 
-export default Object;
+export default Order;
