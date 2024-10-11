@@ -9,8 +9,8 @@
     "server": "nodemon backend/server.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "data:import" : "node backend/seeder.js",
-    "data:export" : "node backend/seeder.js -d"
+    "data:import": "node backend/seeder.js",
+    "data:export": "node backend/seeder.js -d"
   },
   "author": "hp15aug",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0"
   },
   "devDependencies": {

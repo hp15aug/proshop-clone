@@ -1,4 +1,4 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 
@@ -14,6 +14,9 @@ connectDB();
 const port=process.env.PORT;
 const app=express();
 app.use(cors());
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
