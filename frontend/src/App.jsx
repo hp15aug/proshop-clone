@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 
 import { Container } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
   return (
@@ -12,7 +14,8 @@ export default function App() {
         <Container>
           <Outlet />
         </Container>
-        <Footer></Footer>
+        <Footer />
+        <ToastContainer />
       </main>
     </div>
   )
